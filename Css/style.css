@@ -1,0 +1,80 @@
+/* ===================================================================== */
+/* ===============================Background============================ */
+
+.first-background {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url('../Img/1.jpg');
+  background-repeat: no-repeat, no-repeat;
+  background-attachment: fixed, fixed;
+  background-position: center, center;
+
+}
+
+/* ===================================================================== */
+/* ===============================Grid================================== */
+
+/* ===================================================================== */
+/* =============================content================================= */
+
+.content {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  justify-items: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+  margin: 0rem;
+}
+
+/* ===================================================================== */
+/* =============================row-1=================================== */
+.row-1 {
+  display: grid;
+  grid-row: 1/2;
+  grid-column: 1/-1;
+}
+
+.slide {
+  width: 70vw;
+  height: 70vh;
+  position: relative;
+  background-image: url('../Img/1.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.previous {
+  position: absolute;
+  top: 50%;
+  left: -6.5rem;
+  transform: translateY(-50%);
+  font-family: "Poppins-Medium";
+  font-size: 5rem;
+  background-color: #e9897e78;
+  color: #ffffff;
+  border-radius: 1rem 0rem 0rem 1rem;
+  width: 5rem;
+  padding: 0rem 0.75rem;
+  cursor: pointer;
+  z-index: 3;
+}
+
+.next {
+  position: absolute;
+  top: 50%;
+  right: -6.5rem;
+  transform: translateY(-50%);
+  font-family: "Poppins-Medium";
+  font-size: 5rem;
+  background-color: #e9897e78;
+  color: #ffffff;
+  border-radius: 0rem 1rem 1rem 0rem;
+  width: 5rem;
+  padding: 0rem 0rem 0rem 1.5rem;
+  cursor: pointer;
+  z-index: 3;
+}
+
+/* ===================================================================== */
+/* =============================row-2=================================== */
